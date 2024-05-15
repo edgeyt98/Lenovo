@@ -1,0 +1,54 @@
+html{
+    margin: 0px;
+}
+.registration_form{
+    display:flex;
+    width: 400px;
+    height: 650px;
+    margin: 0px auto;
+}
+.header{
+    padding: 0px auto;
+    margin: 0px;
+    width: 100%;
+    color: white;
+    background: black;
+    height: 10%;
+}
+.header span{
+    margin: 0px auto;
+}
+#email{
+    width: 90%;
+    height: 7%;
+    margin-bottom: 10px;
+}
+#Continue{
+    width: 92%;
+    height: 7%;
+    background-color: #294E95;
+    color: #EAEEF5;
+    text-decoration: none;
+    border: 1px solid #294E95;
+    margin-top: 10px;
+}
+#Continue:hover{
+    background-color: #EAEEF5;
+    color: #294E95;
+}    
+.learn{
+    width: 92%;
+    height: 7%;
+    background-color: #294E95;
+    color: #EAEEF5;
+    text-decoration: none;
+    border: 1px solid #294E95;
+    margin-top: 10px;
+}
+a div:hover{
+    background-color: #EAEEF5;
+    color: #294E95;
+}
+a{
+    text-decoration: none;
+}
