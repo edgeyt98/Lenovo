@@ -196,14 +196,7 @@ header{
     justify-content: center;
 }.learn{
     border: 1px solid black;
-    height: 50px;
-    align-content: center;
-    width: 138px;
     background-color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700px;
-    color: black;
 }
 .learn a{
     text-decoration: none;
