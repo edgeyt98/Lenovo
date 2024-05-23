@@ -269,3 +269,15 @@ span{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+#email{
+    border: 0.1rem solid black;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 0.3rem;
+}
+#dropdown{
+    border: 0.1rem solid black;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 0.3rem;
+}
