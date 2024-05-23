@@ -14,11 +14,13 @@ header{
     background-color: #fff;
     word-break: normal;
     line-height: normal;
+    margin-bottom: 3rem;
 }
 .head1{
     display: flex;
     height: 39px;
     justify-content: end;
+    background-color:#EDEDED;
 }
 .head1 .elements{
     margin-right: 25px;
