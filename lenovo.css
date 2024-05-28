@@ -283,3 +283,13 @@ span{
     width: 15rem;
     border-radius: 0.3rem;
 }
+footer{
+    background-color: #ededed;
+}
+.linkheading{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.sociallink{
+    align-content: center;
+}
