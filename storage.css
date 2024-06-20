@@ -1,0 +1,606 @@
+
+
+.explore h3{
+    font-family:  sans-serif;
+    font-size: 48px;
+    margin-left: 30px;
+}
+
+.container p{
+    font-family:  sans-serif;
+    font-size: 30px;
+    margin-left:30px;
+}
+
+.container3 h4{
+    font-size: 40px;
+    font-family: arial;
+    margin-left: 30px;
+}
+
+.hr{
+    width: 470px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+
+.container4{
+    background-color: white;
+    width: 460px;
+    height: 180px;
+    margin-left: 30px;
+}
+
+
+.container4.img{
+    width: 124px;
+    height: 80px;
+    display: inline;
+    
+}
+
+.container4 p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.server1{
+    float: right;
+    width :298px;
+    height: 141px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+
+.server img{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.server{
+    display: inline;
+}
+
+.server1 h3{
+    display: inline;
+    margin-bottom:5px ;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.server1 p{
+    margin-bottom: 4px;
+
+}
+
+/* this is the css for the storage part*/
+
+.container5{
+    background-color: white;
+    width: 460px;
+    height: 180px;
+    margin-left: 30px;
+}
+
+
+.container5.img{
+    width: 124px;
+    height: 80px;
+    display: inline;
+    
+}
+
+.container5 p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.server2{
+    float: right;
+    width :298px;
+    height: 141px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+
+.server2 h3{
+    display: inline;
+    margin-bottom:5px ;
+    font-size: 24px;
+    margin-top: 5px;
+}
+.storage img{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.storage{
+    display: inline;
+}
+
+/* this is the css for the third image */
+
+.container6{
+    background-color: white;
+    width: 460px;
+    height: 180px;
+    margin-left: 30px;
+}
+
+
+.container6.img{
+    width: 124px;
+    height: 80px;
+    display: inline;
+    
+}
+
+.container6 p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.server3{
+    float: right;
+    width :298px;
+    height: 141px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+
+.server3 h3{
+    display: inline;
+    margin-bottom:5px ;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.Software-Defined-infrastructure img{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.Software-Defined-infrastructure{
+    display: inline;
+}
+/*this is the css for the 4rth */
+
+.container7{
+    background-color: white;
+    width: 460px;
+    height: 180px;
+    margin-left: 30px;
+}
+
+
+.container7.img{
+    width: 124px;
+    height: 80px;
+    display: inline;
+}
+
+.container7 p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.server4{
+    float: right;
+    width :270px;
+    height: 141px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+.server4 h3{
+    display: inline;
+    margin-bottom:5px ;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.Software img{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.Software{
+    display: inline;
+}
+
+
+.container9 h4{
+    font-size: 40.6px;
+    font-family: sans-serif;
+    margin-left: 26px;
+}
+
+.hr1{
+    width: 470px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.thinksystem{
+    margin-left: 15px;
+
+}
+
+.container10{
+    width: 450px;
+    height: 200px;
+    background-color: white;
+    margin-left: 30px;
+
+}
+
+.container10 img{
+    width: 146px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.thinksystem p{
+    display: inline;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+a{
+    display: block;
+}
+
+/* this is for the ai for all */
+
+.container11 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40.6px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+.container12{
+    background-color: white;
+    height: 130px;
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.line hr{
+    width: 500px;
+    margin-top: 48px;
+    margin-right: 120px;
+    margin-left: 23px;
+}
+
+.img1{
+    display: inline;
+    width: 120px;
+    height: 79px;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+.img1 img{
+    margin-top: 9px;
+}
+
+.ai1 p{
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.ai1{
+    float: right;
+    width :298px;
+    height: 141px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.ai1 h4{
+    display: inline;
+    font-size: 24px;
+    margin-bottom : 8px;
+}
+
+/*this is for the second part*/
+
+.ai2 p{
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.ai2{
+    float: right;
+    width :298px;
+    height: 141px;
+    margin-right: 10px;
+    margin-top: -95px;
+    display: inline;
+    
+}
+
+.ai2 h4{
+    display: inline;
+    margin-bottom:5px ;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.container13{
+        background-color: white;
+        height: 130px;
+        width: 500px;
+        margin-left: 30px;
+        margin-top: 5px;
+
+}
+
+.ai3 p{
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.ai3{
+    float: right;
+    width :298px;
+    height: 141px;
+    margin-right: 10px;
+    margin-top: -1px;
+    display: inline;
+    
+}
+
+.ai3 h4{
+    display: inline;
+    margin-bottom:5px ;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.container15{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.item{
+    height: 830px;
+    width: 526;
+}
+
+.img2 img{
+    height: 539px;
+    width: 951px;
+    float: right;
+    margin-right : 40px;
+}
+
+.content h1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.img2 img{
+    width: 869px;
+    height: 430px;
+    margin-right: 100px;
+}
+
+.content1 h3{
+    font-size: 40px;
+    font-family: sans-serif;
+    display: inline;
+    margin-left: 90px;
+    
+}
+
+.para p{
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 18px;
+    
+}
+
+.para{
+    width: 540px;
+    height: 270px;
+    margin-left: 90px;
+}
+
+.link a{
+    display: inline;
+    margin-left: 90px;
+    margin-bottom: 9px;
+}
+
+.content2{
+    background-color: white ;
+    width: 250px;
+    height: 400px;
+    margin: 80px;
+}
+
+.container17{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img3 img{
+    display: inline;
+    margin-left: 45px;
+}
+
+.para1 p{
+    text-align: center;
+    margin-bottom : 10px;
+}
+
+.h3{
+    display: inline;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.h3 h4{
+    font-size: 17.6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.re h2{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 80px;
+    text-transform: uppercase;
+}
+
+.container18{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.img4 img{
+    height: 295px;
+    width: 518px;
+    display: inline;
+    margin: 25px;
+    padding: 15px;
+    height: auto;
+    width: auto;
+}
+
+.para3{
+    display: inline;
+    margin-left: 30px;
+}
+
+.content3 p{
+    text-align: justify;
+    width: 500px;
+    height : auto;
+    display: block;
+    margin-left: 43px;
+    font-size: 16px;
+
+}
+
+.content3 {
+    display: inline;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+
+.content3 h3{
+    display: inline;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content3 a{
+    padding: 9px;
+    margin-left: 40px;
+}
+
+.container18{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img5 img{
+    height: 301px;
+    width: 460px;
+    display: inline;
+    margin-top: -16px;
+    padding : 30px;
+}
+
+.container19{
+    background-color: #f4f4f4;
+    width: 340px;
+    height: 513px;
+    margin: 20px;
+ 
+}
+
+.container19 img{
+    height: 200px;
+    width: 340px;
+}
+
+.main h3{
+    font-size: 26.7px;
+    margin-top: 12px;
+    margin-left: 10px;
+    
+}
+
+.main p{
+    text-align: center;
+    font-size: 19px;
+    width : 100px;
+    height: 60px;
+    display: inline;    
+}
+
+.container20 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+ 
+.main a{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.img6 img{
+    height: 301px;
+    width: 460px;
+    display: inline;
+    margin-top: -16px;
+    padding-top : 30px;
+
+}
+
+.content6{
+    width: 450px;
+    height: 50px;
+    margin-top: 70px;
+    display: block;
+    width: 350px;
+}
+
+.content6 p{
+    width: 450px;
+}
+
+.content6 h3{
+
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head h3{
+    font-size: 40px;
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*The css part ends here the thing have to correct the events section */
