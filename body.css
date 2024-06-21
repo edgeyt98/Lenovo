@@ -187,13 +187,14 @@ nav > div > ul li:hover ul{
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .left_nav_link{
   justify-content: start;
   padding-left: 0;
 }
 #space{
-  width: 1.2rem;
+  width: 1.1rem;
 }
 .left_nav_link li{
   padding: 0.5rem;
@@ -244,7 +245,17 @@ nav > div > ul li:hover ul{
       justify-content: end;
   }
 } 
-
+@media screen and (max-width: 652px){
+  .center_nav_bar ul li:nth-child(2) input{
+    display:none;
+  }
+  #search button{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius:1rem;
+    border-top-left-radius:1rem;
+    border-bottom-left-radius:1rem;
+  }
+}
 /*code to set footer*/
 .footer{
   padding-left: 150px;
