@@ -7,9 +7,9 @@ let check_availability = document.getElementById("check_availability");
 
 function isUserNameAvailable(){
     //read the value of username
-    let username = document.getElementById("i_username").value;
+    let username = document.getElementById("i_email").value;
     if(localStorage.getItem(username) != null){
-        alert("Username is already occupied; please choose another");
+        alert("Email is already occupied; please choose another");
         return false;
     }
     return true;
@@ -17,7 +17,7 @@ function isUserNameAvailable(){
 
 function isAvailable(){
     if(isUserNameAvailable()){
-        alert("Username available; go ahead");
+        alert("Email available; go ahead");
     }
 }
 
@@ -36,7 +36,7 @@ register.addEventListener('submit', function(event){
         //remove confirm_password as it is not needed now
         delete object.confirm_password;
         //write object to local storage by using the username as key
-        localStorage.setItem(object['username'], JSON.stringify(object));
+        localStorage.setItem(object['email'], JSON.stringify(object));
         alert("Registration Successfull");
 
         //code to make the form empty
@@ -57,9 +57,9 @@ function isRegisterFormValidated(fd){
         //you are here means no value for name
         message = "Please provide name";
     }
-    if(fd.get('username').trim().length == 0){
+    if(fd.get('email').trim().length == 0){
         //you are here means no value for username
-        message != ""?(message+="\nPlease provide username"):(message = "Please provide username");
+        message != ""?(message+="\nPlease provide email"):(message = "Please provide email");
     }
     if(fd.get('password').length == 0){
         //you are here means no value for password
