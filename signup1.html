@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Example</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <div class="theme_selector">
+      <select id="theme">
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+      </select>
+    </div>
+    <form id="register">
+      <div class="row">
+        <div class="col head">Name</div>
+        <div class="col form_ele">
+          <input type="text" name="name" value="" id="i_name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col head">Username</div>
+        <div class="col form_ele">
+          <input type="text" name="username" value="" id="i_username" />
+          <input type="button" id="check_availability" value="Check Availability" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col head">Password</div>
+        <div class="col form_ele">
+          <input type="password" name="password" value="" id="i_password" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col head">Confirm Password</div>
+        <div class="col form_ele">
+          <input type="password" name="confirm_password" value="" id="i_confirm_password" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col no_star_head">
+          <input type="reset" name="reset" value="Clear Form" />
+        </div>
+        <div class="col form_ele">
+          <input type="submit" name="submit" value="Submit Form" />
+          <br />
+          <a href="signin.html">Click to Login</a>
+        </div>
+      </div>
+    </form>
+    <script src="js/common.js"></script>
+    <script src="signup1.js"></script>
+    <!-- slider ends here -->
+  </body>
+</html>
