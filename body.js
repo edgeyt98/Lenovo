@@ -1,7 +1,7 @@
 //Get the toggle button 
 let toggle_button = document.getElementById("toggle_button");
-let menuBar = document.querySelector("nav > ul");
-
+let menuBar = document.querySelector("nav > div:nth-child(4)> ul");
+let menuBar1 = document.querySelector("nav > div:nth-child(5)> ul");
 //register the click event here
 toggle_button.addEventListener('click', function(){
     //check what icon the button has now
@@ -9,12 +9,15 @@ toggle_button.addEventListener('click', function(){
         //The ☰ clicked means the user want to see navigation bar 
         menuBar.style.display = 'flex';
         menuBar.style.flexDirection = 'column';
+        menuBar1.style.display = 'flex';
+        menuBar1.style.flexDirection = 'column';
         
         //change the ☰ to ☓
         toggle_button.innerHTML = '☓';
      }else{
         //The ☓ clicked means the user want to hide navigation bar
         menuBar.style.display = 'none';
+        menuBar1.style.display = 'none';
         //change the ☓ to ☰ 
         toggle_button.innerHTML = '☰';
      }
@@ -47,13 +50,15 @@ window.addEventListener('resize', function(event){
 
         menuBar.style.display = 'flex';
         menuBar.style.flexDirection = 'initial';
+        menuBar1.style.display = 'flex';
+        menuBar1.style.flexDirection = 'column';
 
         //set the status of navigation bar collapse status to false
         isNaviationbarCollapsed = false;
-    }else if(this.window.innerWidth <= 900 && !isNaviationbarCollapsed){
+    }else if(this.window.innerWidth <900 && !isNaviationbarCollapsed){
         //you are here means width is 900 or less
         //and; navigation bar is expanded
-        
+        menuBar1.style.display = 'none';
         menuBar.style.display = 'none';
         //for collapsing of navigation bar; the media query will be removed by browser
 
