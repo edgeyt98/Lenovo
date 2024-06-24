@@ -1,9 +1,9 @@
     let cardData =[
-        {url:'lenovogamingpc.jpg',name:'Lenovo Legion Gaming PC',actualPrice:'10,00,000',discountPrice:'5,00,000'},
-        {url:'lenovocpu.jpg',name:'Lenovo Thinkcentre PC',actualPrice:'1,00,000',discountPrice:'50,000'},
-        {url:'lenovotab.jpg',name:'Wifi Only Android 11 Lenovo Tab M10 3rd GEN FHD - TB-328 FU , Accelerometer, Screen Size: 10.1',actualPrice:'20,000',discountPrice:'14,999'},
-        {url:'lenovogaming.jpg',name:'Lenovo Thinkcentre gaming PC',actualPrice:'1,50,000',discountPrice:'80,000'},
-        {url:'lenovolaptop.jpg',name:'ThinkPad P16s 40.64cms - 13th Gen Intel i7',actualPrice:'1,60,999',discountPrice:'1,39,699'}
+        {url:'lenovogamingpc.jpg',name:'Lenovo Legion Gaming PC',actualPrice:'10,00,000',discountPrice:'5,00,000',id:1},
+        {url:'lenovocpu.jpg',name:'Lenovo Thinkcentre PC',actualPrice:'1,00,000',discountPrice:'50,000',id:2},
+        {url:'lenovotab.jpg',name:'Wifi Only Android 11 Lenovo Tab M10 3rd GEN FHD - TB-328 FU , Accelerometer, Screen Size: 10.1',actualPrice:'20,000',discountPrice:'14,999',id:3},
+        {url:'lenovogaming.jpg',name:'Lenovo Thinkcentre gaming PC',actualPrice:'1,50,000',discountPrice:'80,000',id:4},
+        {url:'lenovolaptop.jpg',name:'ThinkPad P16s 40.64cms - 13th Gen Intel i7',actualPrice:'1,60,999',discountPrice:'1,39,699',id:5}
     ];
 //code to acess card container
 let cardContainer = document.getElementById("cardHolder");
@@ -43,6 +43,7 @@ function buybutton(card){
 function addwishlist(card){
     let addWishlist = document.createElement("button");
     addWishlist.textContent = 'Add to WishList';
+    addWishlist.classList.add('wish');
     return addWishlist;
 }
 //function to create card
@@ -63,8 +64,26 @@ function createCard(card){
 
     return division;
 }
-
 //code to add card inn thee container
 cardData.forEach((card) => {
     cardContainer.appendChild(createCard(card));
 })
+cardData.forEach((card) =>{
+    findIndex(card);
+    console.log(index);
+})
+let wishlist = document.querySelectorAll(".wish");
+function sendtoLocalStorage(cardData){
+    for(let i =0;i< cardData.length;i++){
+        if(cardData[i].id ==index){
+            localStorage.setItem(cardData[index-1]['id'], JSON.stringify(cardData[index-1]));
+        }
+    }
+}
+wishlist.forEach((button) =>{
+    button.addEventListener('click',() =>{
+        alert("id");
+        sendtoLocalStorage(cardData);
+    })
+})
+
