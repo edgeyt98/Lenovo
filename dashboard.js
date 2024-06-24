@@ -75,9 +75,20 @@ cardData.forEach((card) =>{
 let wishlist = document.querySelectorAll(".wish");
 function sendtoLocalStorage(cardData){
     for(let i =0;i< cardData.length;i++){
-        if(cardData[i].id ==index){
+       /* if(cardData[i].id ==index){
             localStorage.setItem(cardData[index-1]['id'], JSON.stringify(cardData[index-1]));
-        }
+        }*/
+       if(cardData[i].id == 1){
+        localStorage.setItem(cardData[0]['id'], JSON.stringify(cardData[0]));
+       }else if(cardData[i].id == 2){
+        localStorage.setItem(cardData[1]['id'], JSON.stringify(cardData[1]));
+       }else if(cardData[i].id == 3){
+        localStorage.setItem(cardData[2]['id'], JSON.stringify(cardData[2]));
+       }else if(cardData[i].id == 4){
+        localStorage.setItem(cardData[3]['id'], JSON.stringify(cardData[3]));
+       }else if(cardData[i].id == 5){
+        localStorage.setItem(cardData[4]['id'], JSON.stringify(cardData[4]));
+       }
     }
 }
 wishlist.forEach((button) =>{
