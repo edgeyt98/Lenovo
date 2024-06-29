@@ -5,6 +5,7 @@
         {url:'lenovogaming.jpg',name:'Lenovo Thinkcentre gaming PC',actualPrice:'1,50,000',discountPrice:'80,000',id:4},
         {url:'lenovolaptop.jpg',name:'ThinkPad P16s 40.64cms - 13th Gen Intel i7',actualPrice:'1,60,999',discountPrice:'1,39,699',id:5}
     ];
+let cardNumber =0;
 //code to acess card container
 let cardContainer = document.getElementById("cardHolder");
 
@@ -37,6 +38,7 @@ function productPrice(card){
 function buybutton(card){
     let buyButton = document.createElement("button");
     buyButton.textContent = 'Buy Now';
+    buyButton.classList.add('buy');
     return buyButton;
 }
 //function to create a button to add to wishlist
@@ -44,6 +46,9 @@ function addwishlist(card){
     let addWishlist = document.createElement("button");
     addWishlist.textContent = 'Add to WishList';
     addWishlist.classList.add('wish');
+    addWishlist.addEventListener('click',()=>{
+        cardNumber = card.id;
+    })
     return addWishlist;
 }
 //function to create card
@@ -68,33 +73,27 @@ function createCard(card){
 cardData.forEach((card) => {
     cardContainer.appendChild(createCard(card));
 })
-cardData.forEach((card) =>{
-    findIndex(card);
-    console.log(index);
-})
 let wishlist = document.querySelectorAll(".wish");
-function sendtoLocalStorage(cardData){
+function sendtoLocalStorage(cardData,cardNumber){
     for(let i =0;i< cardData.length;i++){
-       /* if(cardData[i].id ==index){
-            localStorage.setItem(cardData[index-1]['id'], JSON.stringify(cardData[index-1]));
-        }*/
-       if(cardData[i].id == 1){
-        localStorage.setItem(cardData[0]['id'], JSON.stringify(cardData[0]));
-       }else if(cardData[i].id == 2){
-        localStorage.setItem(cardData[1]['id'], JSON.stringify(cardData[1]));
-       }else if(cardData[i].id == 3){
-        localStorage.setItem(cardData[2]['id'], JSON.stringify(cardData[2]));
-       }else if(cardData[i].id == 4){
-        localStorage.setItem(cardData[3]['id'], JSON.stringify(cardData[3]));
-       }else if(cardData[i].id == 5){
-        localStorage.setItem(cardData[4]['id'], JSON.stringify(cardData[4]));
-       }
+        if(cardData[i].id == cardNumber){
+            localStorage.setItem(cardData[i]['id'], JSON.stringify(cardData[i]));
+        }
     }
 }
 wishlist.forEach((button) =>{
     button.addEventListener('click',() =>{
         alert("id");
-        sendtoLocalStorage(cardData);
+        sendtoLocalStorage(cardData,cardNumber);
+        alert(cardNumber);
     })
+})
+
+//code to add functionality to buy
+let buy = document.querySelectorAll(".buy");
+buy.forEach((button)=>{
+    button.addEventListener('click',()=>{
+        alert("Sucessfully buy this Product");
+    });
 })
 
