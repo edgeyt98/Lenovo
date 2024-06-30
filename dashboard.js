@@ -1,11 +1,3 @@
-    let cardData =[
-        {url:'lenovogamingpc.jpg',name:'Lenovo Legion Gaming PC',actualPrice:'10,00,000',discountPrice:'5,00,000',id:1},
-        {url:'lenovocpu.jpg',name:'Lenovo Thinkcentre PC',actualPrice:'1,00,000',discountPrice:'50,000',id:2},
-        {url:'lenovotab.jpg',name:'Wifi Only Android 11 Lenovo Tab M10 3rd GEN FHD - TB-328 FU , Accelerometer, Screen Size: 10.1',actualPrice:'20,000',discountPrice:'14,999',id:3},
-        {url:'lenovogaming.jpg',name:'Lenovo Thinkcentre gaming PC',actualPrice:'1,50,000',discountPrice:'80,000',id:4},
-        {url:'lenovolaptop.jpg',name:'ThinkPad P16s 40.64cms - 13th Gen Intel i7',actualPrice:'1,60,999',discountPrice:'1,39,699',id:5}
-    ];
-let cardNumber =0;
 //code to acess card container
 let cardContainer = document.getElementById("cardHolder");
 
@@ -39,6 +31,9 @@ function buybutton(card){
     let buyButton = document.createElement("button");
     buyButton.textContent = 'Buy Now';
     buyButton.classList.add('buy');
+    buyButton.addEventListener('click',()=>{
+        cardNumber2 = card.id;
+    })
     return buyButton;
 }
 //function to create a button to add to wishlist
@@ -77,10 +72,11 @@ let wishlist = document.querySelectorAll(".wish");
 function sendtoLocalStorage(cardData,cardNumber){
     for(let i =0;i< cardData.length;i++){
         if(cardData[i].id == cardNumber){
-            localStorage.setItem(cardData[i]['id'], JSON.stringify(cardData[i]));
+            localStorage.setItem("wishlist" + cardData[i]['id'], JSON.stringify(cardData[i]));
         }
     }
 }
+
 wishlist.forEach((button) =>{
     button.addEventListener('click',() =>{
         alert("id");
@@ -90,10 +86,18 @@ wishlist.forEach((button) =>{
 })
 
 //code to add functionality to buy
-let buy = document.querySelectorAll(".buy");
+/*let buy = document.querySelectorAll(".buy");
+function sendtoLocalStorage(cardData,cardNumber2){
+    for(let i =0;i< cardData.length;i++){
+        if(cardData[i].id == cardNumber2){
+            localStorage.setItem("buy" + cardData[i]['id'], JSON.stringify(cardData[i]));
+        }
+    }
+}
 buy.forEach((button)=>{
     button.addEventListener('click',()=>{
         alert("Sucessfully buy this Product");
+        sendtoLocalStorage(cardData,cardNumber2);
+        alert(cardNumber2);
     });
-})
-
+})*/
