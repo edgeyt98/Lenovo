@@ -34,7 +34,7 @@ loginForm.addEventListener('submit', function(event){
             //write the name of logged in user to localstorage for the key 'loggedInUser'
             localStorage.setItem('loggedInUser', userData["name"])
             //load a new page that is login protected and display some name of user there
-            window.location.href = "body.html";
+            window.location.href = "dashboard.html";
             
         }
     }
