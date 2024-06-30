@@ -1,4 +1,4 @@
-let cardKey =[1,2,3,4,5];
+let cardKey =["wishlist1","wishlist2","wishlist3","wishlist4","wishlist5"];
 let wishCard  =[];
 for(let i =0; i< cardKey.length; i++){
     let data =localStorage.getItem(cardKey[i]);
@@ -39,29 +39,56 @@ function productPrice(card){
 function buybutton(card){
     let buyButton = document.createElement("button");
     buyButton.textContent = 'Buy Now';
+    buyButton.classList.add('buy');
+    buyButton.addEventListener('click',()=>{
+        cardNumber = card.id;
+    });
     return buyButton;
-}function createCard(card){
+}
+function removebutton(card){
+    let removeButton = document.createElement("button");
+    removeButton.textContent = 'Remove';
+    removeButton.classList.add('remove');
+    removeButton.addEventListener('click',()=>{
+        cardNumber = card.id;
+    });
+    return removeButton;
+}
+function createCard(card){
     let cardImg = createImage(card);
     let nameh2 = productName(card);
     let price = productPrice(card);
     let buyButton = buybutton(card);
+    let removeButton = removebutton(card);
 
     let division = document.createElement("div");
     division.appendChild(cardImg);
     division.appendChild(nameh2);
     division.appendChild(price);
     division.appendChild(buyButton);
+    division.appendChild(removeButton);
     division.classList.add('productcard');
 
     return division;
 }
 
 //code to add card inn thee container
-
-
-
-window.addEventListener('load',(event)=>{
     wishCard.forEach((card) => {
         cardContainer.appendChild(createCard(card));
     })    
+//code to reemove item
+let remove = document.querySelectorAll(".remove");
+function removeFromLocalStorage(cardData,cardNumber){
+    for(let i =0;i< cardData.length;i++){
+        if(cardData[i].id == cardNumber){
+            localStorage.remove("wishlist" + cardData[i]['id']);
+        }
+    }
+}
+remove.forEach((button) =>{
+    button.addEventListener('click',() =>{
+        alert("id");
+        removeFromLocalStorage(cardData,cardNumber);
+        alert(cardNumber);
+    })
 })
