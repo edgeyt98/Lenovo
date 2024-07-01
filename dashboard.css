@@ -2,12 +2,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color:white;
+    position: absolute;
+    justify-content: space-around;
+    left: 34%;
 }
 .productcard{
-    background-color: aqua;
-    width: 15vw;
-    height: 45vh;
+  background-color:whitesmoke;
+    width: 14vw;
+    height: 40vh;
     padding: 2rem;
+    margin: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .imgDiv{
     height: 30vh;
@@ -17,3 +24,86 @@
     height: 100%;
     width: auto;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  #contain {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #contain > div:first-child {
+    background-color: black;
+    border: 0.1rem solid black;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  #contain > div:first-child:hover
+  {
+    background-color:#f1f1f1;
+    color: black;
+  }
+  #profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px solid black;
+    padding: 1rem;
+  }
+  
+  #profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333333;
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #666666;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: #666666;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  ul li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  #product {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }

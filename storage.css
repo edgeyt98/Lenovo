@@ -390,12 +390,6 @@ a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.img2 img{
-    width: 869px;
-    height: 430px;
-    margin-right: 100px;
-}
-
 .content1 h3{
     font-size: 40px;
     font-family: sans-serif;
@@ -429,7 +423,11 @@ a{
     height: 400px;
     margin: 80px;
 }
-
+.container16 img{
+    right: 0px;
+    width: 5%;
+    height: auto;
+}
 .container17{
     display: flex;
     justify-content: space-around;
