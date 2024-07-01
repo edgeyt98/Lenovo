@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.productcard{
+    background-color: aqua;
+    width: 15vw;
+    height: 45vh;
+    padding: 2rem;
+}
+.imgDiv{
+    height: 30vh;
+    width: 20vw;
+}
+.image{
+    height: 100%;
+    width: auto;
+}

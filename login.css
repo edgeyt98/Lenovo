@@ -22,20 +22,7 @@ html{
     width: 90%;
     height: 7%;
     margin-bottom: 10px;
-}
-#Continue{
-    width: 92%;
-    height: 7%;
-    background-color: #294E95;
-    color: #EAEEF5;
-    text-decoration: none;
-    border: 1px solid #294E95;
-    margin-top: 10px;
-}
-#Continue:hover{
-    background-color: #EAEEF5;
-    color: #294E95;
-}    
+} 
 .learn{
     width: 92%;
     height: 7%;
@@ -45,9 +32,15 @@ html{
     border: 1px solid #294E95;
     margin-top: 10px;
 }
+.learn:hover{
+    background-color: #EAEEF5;
+    color: #294E95;
+    border: 0.1rem solid #294E95;
+}
 a div:hover{
     background-color: #EAEEF5;
     color: #294E95;
+    text-decoration: none;
 }
 a{
     text-decoration: none;

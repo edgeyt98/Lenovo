@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row p-2">
+                <ul>
+                    <li><a href="#"><b>Lenovo Pro</b> Business Store</a>
+                        <ul class="multidropdown">
+                            <li><a href="#">Register &gt</a></li>
+                            <hr/>
+                            <li><a href="#">Login &gt</a></li>
+                            <hr/>
+                            <li><a href="#">Learn more &gt</a></li>
+                            <hr/>
+                        </ul>
+                    </li>
+                    <li><a href="#">Lenovo Student Store</a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <ul class="multidropdown">
+                            <li><h4>My list</h4></li>
+                            <li>You currently have no saved list</li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-headphones"></i></a>
+                        <ul class="multidropdown">
+                            <li><b>For Technical Support</b>
+                                <br/>
+                                <p>Consumer/Idea/Yoga/Legion</p>  
+                                <span>1800-419-7555</span>
+                                <br/>
+                                <span>Mon-Sat – 10AM to 7PM</span>
+                                <br/>
+                                <p>Commercial/Think</p>
+                                <p>1800-419-4666</p>
+                                <p>Mon-Sat – 10AM to 7PM</p>
+                            </li>
+                            <hr/>
+                            <li>
+                                <b>For Order Support</b>
+                                <p>1800-572-6465</p>
+                                <p>Mon-Sat – 9AM to 6PM</p>
+                            </li>
+                            <hr/>
+                            <li>
+                                <b>For Sells Inquary</b>
+                                <p>1800-4199-733</p>
+                                <p>Mon-Sat – 9AM to 8PM</p>
+                            </li>
+                            <hr/>
+                            <li>
+                                <b>Support in PC Buying</b>
+                                <p>Call 1800 572 2224</p>
+                                <p>Mon-Sat – 9AM to 8PM</p>
+                            </li>
+                            <hr/>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class=" row center_nav_bar">
+                <ul>
+                    <li><img src="https://p4-ofp.static.pub/fes/cms/2022/11/14/h82es5y402b4rh1089sf86ay7n9sdl721044.png" id="logo_image"/></li>
+                    <li>
+                        <span id="search"><input type="text"/><button><i class="fa-solid fa-magnifying-glass"></i></button></span>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-person"></i> Sign in/Create Account</a>
+                        <ul class="multidropdown2">
+                            <li><a href="#">
+                                <span>Sign Up</span>
+                                <br/>
+                                <p>View your account and order status</p>
+                            </a></li>
+                            <hr/>
+                            <li><a href="#">
+                                <p>My Account</p>
+                                <br/>
+                                <span>Checkout faster, save items and more!</span>
+                            </a></li>
+                            <hr/>
+                            <li><a href="#">Orders</a></li>
+                            <br/>
+                            <hr/>
+                            <li><a href="#">Production Registrations</a></li>
+                            <hr/>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                        <ul class="multidropdown2">
+                            <li>           
+                                <p>Your cart is empty! Don’t miss out on the latest products and savings — find your next favorite laptop, PC, or accessory today.</p>
+                                <span>Fill it in with great deals</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul> 
+            </div>
+            <div class="last_nav_bar">
+                <ul class="left_nav_link">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Servers & Storage</a></li>
+                    <li><a href="#">Services & Solutions</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">About Lenovo</a></li>
+                    <li id="space"></li>
+                    <li><a href="#">Gaming |</a></li>
+                    <li><a href="#">Business |</a></li>
+                    <li><a href="#">Student Store</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div class="container m-5">
+            <div class="row">
+                <div class="col signin">
+                    <h3>Sign-In</h3>
+                    <p>
+                        We've built a new experience allowing you to keep track of your Lenovo products and orders all in one place.
+                    </p>
+                    <form action="" id="loginform">
+                        <input type="email" name="email" placeholder="Enter your email" class ="email" required/>
+                        <br/>
+                        <br/>
+                        <input type="password" name="password" placeholder="enter your Password" class ="email" required/>
+                        <br/>
+                        <br/>
+                        <input type="submit" name ="submit" placeholder="Sign-In" class="submit"/>
+                    </form>
+                    <br/>
+                    <a href="#" id="forget">Forget Password</a>
+                </div>
+                <div class="col signin">
+                    <h3>Create Account</h3>
+                    <p>
+                        You can store addresses, easily keep track of your orders and save items in your cart for later.
+                    </p>
+                    <br/>
+                    <a href="signup1.html"><button class="create">Create Lenovo ID </button></a>
+                    <hr/>
+                    <br/>
+                    <h3>Benefits Of Lenovo ID</h3>
+                    <ul>
+                        <li>Checkout Faster with Stored Addresses</li>
+                        <li>Track Orders & View Purchase History</li>
+                        <li>Save Items in Your Cart For Later</li>
+                        <li>Check Warranty Status</li>
+                        <li>Join the Lenovo Communities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4 p-5">
+                    <p>Enter Email to receive valuable updates</p>
+                    <form>
+                        <input type="email" placeholder="Email" name="email" id="email"/>
+                    </form>
+                </div>
+                <div class="col-md-4 sociallink p-5">
+                    <a href="https://www.facebook.com/LenovoIndia"><img src="https://p4-ofp.static.pub/fes/cms/2021/07/13/i7yuirli2qwiqq1t804izy6fg0xft4483038.svg" height="25px" width="25px"/></a>
+                    <a href="https://x.com/lenovo_in"><img src="https://p2-ofp.static.pub/fes/cms/2021/07/13/q59kynt135ngy6yenpgfp83dulr08r150287.svg"height="25px" width="25px"/></a>
+                    <a href="https://www.linkedin.com/company/lenovo"><img src="https://p2-ofp.static.pub/ShareResource/we/footer/images/linkedin-icon.png" height="25px" width="25px"/></a>
+                    <a href="https://www.youtube.com/user/LenovoVision"><img src="https://p1-ofp.static.pub/fes/cms/2021/07/13/9uav8wkxhmyhu1mlutyfl8vftmkr3w675335.svg" height="25px" width="25px"/></a>
+                    <a href="https://forums.lenovo.com/t5/English-Community/ct-p/Community-EN"><img src="https://p2-ofp.static.pub/ShareResource/we/footer/images/forums-icon.png" height="25px" width="25px"/></a>
+                </div>
+                <div class="col-md-4 p-5">
+                    <p>Select Country / Region:</p>
+                    <select id="dropdown">
+                        <option>India</option>
+                        <option>ALGERIA</option>
+                        <option>ANGOLA</option>
+                        <option>ARGENTINA</option>
+                        <option>ARMENIA</option>
+                        <option>AUSTRALIA</option>
+                        <option>AUSTRIA</option>
+                        <option>BAHRAIN</option>
+                        <option>BANGLADESH</option>
+                        <option>BELARUS</option>
+                        <option>BELGIUM - DUTCH</option>
+                        <option>BELGIUM - FRANÇAIS</option>
+                        <option>BELIZE</option>
+                        <option>BOLIVIA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row m-5">
+                <div class="col-md">
+                    <p class="linkheading">ABOUT LENOVO</p>
+                    <a href="#">Our Company</a>
+                    <br/>
+                    <a href="#">News</a>
+                    <br/>
+                    <a href="#">Investors Relations</a>
+                    <br/>
+                    <a href="#">Legal Information</a>
+                    <br/>
+                    <a href="#">Jobs at Lenovo</a>
+                    <br/>
+                    <a href="#">EGS</a>
+                </div>
+                <div class="col-md">
+                    <p class="linkheading">PRODUCTS & SERVICES</p>
+                    <a href="#">Laptops & Ultrabooks</a>
+                    <br/>
+                    <a href="#">Smartphones</a>
+                    <br/>
+                    <a href="#">Tablets</a>
+                    <br/>
+                    <a href="#">Desktops</a>
+                    <br/>
+                    <a href="#">Workstatios</a>
+                    <br/>
+                    <a href="#">Data Center Solutions</a>
+                    <br/>
+                    <a href="#">Accessories & Software</a>
+                    <br/>
+                    <a href="#">Services & Warranty</a>
+                    <br/>
+                    <a href="#">Products Recall</a>
+                    <br/>
+                    <a href="#">Replacement Parts</a>   
+                </div>
+                <div class="col-md">
+                    <p class="linkheading">CUSTOMER SUPPORT</p>
+                    <a href="#">Sevice Provider List</a>
+                    <br/>
+                    <a href="#">Where to buy</a>
+                    <br/>
+                    <a href="#">Shopping Help</a>
+                </div>
+                <div class="col-md">
+                    <p class="linkheading">RSOURCES</p>
+                    <a href="#">Employee Programme List</a>
+                    <br/>
+                    <a href="#">Contact Us</a>
+                    <br/>
+                    <a href="#">Find a dealer</a>
+                    <br/>
+                    <a href="#">Email Sign-Up</a>
+                    <br/>
+                    <a href="#">Support</a>
+                    <br/>
+                    <a href="#">Blog</a>
+                    <br/>
+                    <a href="#">Order Status</a>
+                    <br/>
+                    <a href="#">FAQs</a>
+                    <br/>
+                    <a href="#">Glossary</a>
+                </div>
+                <div class="col-md">
+                    <p class="linkheading">PORTFOLIO</p>
+                    <a href="#">ThinkPad T series</a>
+                    <br/>
+                    <a href="#">ThinkPad X series</a>
+                    <br/>
+                    <a href="#">ThinkPad</a>
+                    <br/>
+                    <a href="#">Ideapad</a>
+                    <br/>
+                    <a href="#">Yoga</a>
+                    <br/>
+                    <a href="#">M series Tiny</a>
+                    <br/>
+                    <a href="#">ThinkCentre</a>
+                    <br/>
+                    <a href="#">Ideacentre</a>
+                    <br/>
+                    <a href="#">Tablets</a>
+                    <br/>
+                    <a href="#">Think Station</a>
+                    <br/>
+                    <a href="#">Data Center Solutions</a>
+                </div>
+                <div class="col-md">
+                    <p class="linkheading">SOLUTIONS</p>
+                    <a href="#">Business Partners</a>
+                    <br/>
+                    <a href="#">Think Progress</a>
+                </div>
+            </div>
+            <p class="text-center m-0">&copy; 2024 Lenovo.All rights reserved</p>
+            <div class="text-center"><a href="#">Privacy</a> | <a href="#">Site Maps</a> | <a href="#">Terms Of Use</a> | <a href="#">External Submission Policy</a> | <a href="#">Sales terms and conditions</a> | <a href="#">Anti-Slavery and Humans Trafficking Statement</a></div>
+        </div>
+    </footer>
+<div class="stic">
+    <div><i class="fa-regular fa-face-smile"></i>Feedback|</div>
+    <div><i class="fa-brands fa-square-whatsapp"></i></div>
+    <div class="atchfooter">
+        
+        <span>Need Help? Call :1-800-4199-733</span>
+    </div>
+</div>
+<script src="signin.js"></script>
+</body>
+</html>
